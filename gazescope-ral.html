@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="GazeScope">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GazeScope: A Framework of Gaze Attention-Based Automatic Field-of-View Adjustment for Laparoscopic Robots
+    </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> GazeScope: A Framework of Gaze Attention-Based Automatic Field-of-View Adjustment for Laparoscopic Robots </h1>
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">
+                <a href="https://ieeexplore.ieee.org/document/11003575">[IEEE Xplore]</a><br>
+                <a href="https://zhangj726.github.io/">Jing Zhang</a> &nbsp;&nbsp;
+                Baichuan Wang&nbsp;&nbsp;
+                Zhijie Pan&nbsp;&nbsp;
+                <a href="https://mengtangli.github.io/">Mengtang Li</a>*&nbsp;&nbsp;
+                <br>*corresponding author: limt29@mail.sysu.edu.cn
+              </span>
+            </div>
+   
+            </span></span>
+            <div class="column">
+                <image src="./static/images/sysu.png" style="width: 30%;"></image>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<h2 class="title is-2" style="text-align: center;">Supplementary Videos</h2>
+<section class="section">
+  <div class="container">
+      <h3 class="title is-3" style="text-align: center;">Test 1: A surgical tool exists and re-enters</h3>
+      <div class="video-container", style="text-align: center;">
+        <video playsinline autoplay loop muted src="resources/RAL2025/test1.mp4" poster="./static/images/loading-icon.gif" alt="test1" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+      <h3 class="title is-3" style="text-align: center;">Test 2: Clamp and Cut</h3>
+      <div class="video-container", style="text-align: center;">
+        <video playsinline autoplay loop muted src="resources/RAL2025/test2.mp4" poster="./static/images/loading-icon.gif" alt="test2" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The procedure of laparoscopic minimally invasive surgery (MIS) heavily relies on the effective and efficient adjustment of the laparoscopic field-of-view (FoV). 
+            However, most existing robot-assisted laparoscopic FoV adjustment methods either require additional surgeon interactions or neglect surgeon's intentions. 
+            This letter therefore proposes GazeScope, a novel framework for automatic laparoscopic FoV adjustment, which considers gaze attention, the positions of surgical tools in the image, and the eye-hand consistency. 
+            A gaze attention-based FoV unlocking strategy is proposed to identify and eliminate unnecessary FoV adjustments, thereby improving the stability of the surgical view. 
+            Compared to traditional image-based visual servoing (IBVS) methods, GazeScope offers FoV adjustment that better aligns with manual adjustments by professionals. 
+            Meanwhile, GazeScope reduces unnecessary FoV adjustments by at least 66% and adjusting time by 50% in representative test cases, demonstrating its ability to provide a more stable operational view.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container content">
+    <!-- framework -->
+    <h2 class="title-is-2" style="text-align: center;">Framework</h2>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <img src="resources/RAL2025/framework.jpg" alt="framework" width="90%" style="padding-top:0px;padding-bottom:0px;border-radius:15px;">
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <div class="content has-text-justified">
+          <p>
+            <heading><b>Key Components:</b></heading><br>
+            1) Target determination: The target is determined by the surgeon's gaze attention and the position of the surgical tool in the image. <br>
+            2) FoV unlocking: The FoV is unlocked by the user-defined gaze attention-based FoV unlocking strategy. <br>
+          </p>
+        </div>
+      </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>@ARTICLE{11003575,
+      author={Zhang, Jing and Wang, Baichuan and Pan, Zhijie and Li, Mengtang},
+      journal={IEEE Robotics and Automation Letters}, 
+      title={GazeScope: A Framework of Gaze Attention-Based Automatic Field-of-View Adjustment for Laparoscopic Robots}, 
+      year={2025},
+      volume={10},
+      number={7},
+      pages={6560-6567},
+      keywords={Laparoscopes;Robots;Target tracking;Surgery;Cameras;Visualization;Estimation;Three-dimensional displays;Vectors;Training;Surgical robotics;laparoscopy;visual servoing},
+      doi={10.1109/LRA.2025.3570158}}    
+  </code></pre>
+  </div>
+</section>
+
+
+</body>
+
+<!-- add footnote -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+        The template of this website is from <a href="https://human2humanoid.com/" style="color: #3273dc;">here</a>.
+    </p>
+  </div>
+
+</html>
