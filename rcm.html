@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="GazeScope">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Unified Benchmark for RCM-Constrained Visual Servoing
+    </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"> 
+                          A Unified Benchmark for RCM-Constrained Visual Servoing:
+                          Modeling-Controller Interaction and Robustness Analysis in
+                          Laparoscopic Robots </h1>
+            <div class="is-size-4 publication-authors">
+              <span class="author-block">
+                <a href="https://github.com/zhangj726/RCM-Constrained-IBVS">[GitHub]</a><br>
+                <a href="https://zhangj726.github.io/">Jing Zhang</a> &nbsp;&nbsp;
+                <a href="https://mengtangli.github.io/">Mengtang Li</a>*&nbsp;&nbsp;
+                <br>*corresponding author: limt29@mail.sysu.edu.cn
+              </span>
+            </div>
+   
+            </span></span>
+            <div class="column">
+                <image src="./static/images/sysu.png" style="width: 30%;"></image>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<h2 class="title is-2" style="text-align: center;">Supplementary Videos</h2>
+<section class="section">
+  <div class="container">
+      <h3 class="title is-3" style="text-align: center;">Case 1: Tangent Plane Selection in RCM 1 </h3>
+      <div class="video-container" style="text-align: center;">
+        <video playsinline autoplay loop muted src="resources/RCM/case1.mp4" poster="./resources/loading-icon.gif" alt="test1" width="90%" style="display:block;margin:0 auto;padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+      <h3 class="title is-3" style="text-align: center;">Case 2: Effects of Nrcm for RCM 3 </h3>
+      <div class="video-container" style="text-align: center;">
+        <video playsinline autoplay loop muted src="resources/RCM/case2.mp4" poster="./resources/loading-icon.gif" alt="test2" width="90%" style="display:block;margin:0 auto;padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+      <h3 class="title is-3" style="text-align: center;">Case 3: Comparison of RCM 2 with Open-Loop and Closed-Loop Formulations </h3>
+      <div class="video-container" style="text-align: center;">
+        <video playsinline autoplay loop muted src="resources/RCM/case3.mp4" poster="./resources/loading-icon.gif" alt="test3" width="90%" style="display:block;margin:0 auto;padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+      <h3 class="title is-3" style="text-align: center;">Case 4: Comparison of Different Control Frameworks </h3>
+      <div class="video-container" style="text-align: center;"> 
+        <video playsinline autoplay loop muted src="resources/RCM/case4.mp4" poster="./resources/loading-icon.gif" alt="test4" width="90%" style="display:block;margin:0 auto;padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+      <h3 class="title is-3" style="text-align: center;">Case 5: 2-DoF Visual Servoing with non-constant/constant 𝝀</h3>
+      <div class="video-container" style="text-align: center;">
+        <video playsinline autoplay loop muted src="resources/RCM/case5.mp4" poster="./resources/loading-icon.gif" alt="test5" width="90%" style="display:block;margin:0 auto;padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+      <h3 class="title is-3" style="text-align: center;">Case 6: Simulation Studies with Other Laparoscopic Robots </h3>
+      <div class="video-container" style="text-align: center;">
+        <video playsinline autoplay loop muted src="resources/RCM/case6.mp4" poster="./resources/loading-icon.gif" alt="test6" width="90%" style="display:block;margin:0 auto;padding-top:0px;padding-bottom:0px;border-radius:15px;"></video>
+      </div>
+      
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            In robot-assisted laparoscopic minimally invasive surgery (MIS), 
+            accurate enforcement of the remote center of motion (RCM) constraint is critical for safe and stable automatic field-of-view (FoV) adjustment. 
+	          Although control-based RCM strategies are widely adopted due to their flexibility and cost-effectiveness, 
+            systematic comparison of different RCM formulations and image-based visual servoing (IBVS) frameworks remains challenging due to the lack of a unified and reproducible benchmark. 
+	          This paper presents an open-source simulation framework integrating three representative RCM modeling approaches and six IBVS-based control architectures within a unified velocity-level formulation, 
+            enabling controlled and consistent evaluation. 
+	          Through structured case studies, the framework reveals key structural sensitivities arising from modeling and controller interactions, 
+            including the impact of tangent-plane definition, constraint dimensionality, open- versus closed-loop enforcement, and robustness near kinematic singularities. 
+	          All resources are released and demostrations are provided in the supplementary video, 
+            providing a reproducible foundation for RCM-constrained visual servoing research.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>
+  </code></pre>
+  </div>
+</section>
+
+
+</body>
+
+<!-- add footnote -->
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+        The template of this website is from <a href="https://human2humanoid.com/" style="color: #3273dc;">here</a>.
+    </p>
+  </div>
+
+</html>
