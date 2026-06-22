@@ -174,3 +174,8 @@ body {
   margin-top: 0.5em;
 }
 
+/* Add spacing below video containers to separate videos from following titles */
+.video-container {
+  margin-bottom: 1.5rem;
+}
+
